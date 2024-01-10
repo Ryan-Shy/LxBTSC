@@ -14,6 +14,7 @@ MOC_DIR = moc
 # Input
 HEADERS += QtLxBTSC/ChatWidget.h \
            QtLxBTSC/ConfigWidget.h \
+           QtLxBTSC/LogReader.h \
            QtLxBTSC/file.h \
            QtLxBTSC/FileTransferItemWidget.h \
            QtLxBTSC/FileTransferListWidget.h \
@@ -31,6 +32,7 @@ SOURCES += QtLxBTSC/ChatWidget.cpp \
            QtLxBTSC/FileTransferItemWidget.cpp \
            QtLxBTSC/FileTransferListWidget.cpp \
            QtLxBTSC/FullScreenWindow.cpp \
+           QtLxBTSC/LogReader.cpp \
            QtLxBTSC/globals.cpp \
            QtLxBTSC/plugin.cpp \
            QtLxBTSC/PluginHelper.cpp \

@@ -226,7 +226,7 @@ void PluginHelper::handleFileInfoEvent(uint64 serverConnectionHandlerID, uint64 
 	// check if old file on disk
 	if (old.exists())
 	{
-		qint64 oldUnixtime = old.created().toMSecsSinceEpoch() / 1000; // fileinfoevent gives file creation time as unix timestamp in seconds
+        qint64 oldUnixtime = old.lastModified().toMSecsSinceEpoch() / 1000; // fileinfoevent gives file creation time as unix timestamp in seconds
 		if (datetime > oldUnixtime)
 		{
 			// file on server is newer, download it
